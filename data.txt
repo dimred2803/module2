@@ -1,0 +1,16 @@
+4
+Dusseldorf
+3
+2 3
+1 4
+1 6
+Cologne
+1
+1 4
+Kharkiv
+2
+1 5
+3 5
+Krakov
+1
+6 7
