@@ -17,4 +17,23 @@ public class Edge {
         System.out.println("To " + this.to);
         System.out.println("Distance " + this.distance);
     }
+
+    public void setFrom (int from ){
+        this.from = from;
+    }
+    public void setTo (int to) {
+        this.to = to;
+    }
+    public int getFrom (){
+        return this.from;
+    }
+    public int getTo () {
+        return this.to;
+    }
+    public void setDistance (int distance) {
+        this.distance = distance;
+    }
+    public int getDistance () {
+        return this.distance;
+    }
 }

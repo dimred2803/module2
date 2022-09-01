@@ -3,12 +3,16 @@ package entity;
 import java.util.ArrayList;
 
 public class City {
+    private int num;
     private String name;
     private int countOfNeighbours;
     private ArrayList<Edge> ways;
-    private boolean isVisited = false;
+    private String from = "none";
+    private int sum = 10000;
 
-    public City (String name, int countOfNeighbours, ArrayList<Edge> ways) {
+
+    public City (int num, String name, int countOfNeighbours, ArrayList<Edge> ways) {
+        this.num = num;
         this.name = name;
         this.countOfNeighbours = countOfNeighbours;
         this.ways = ways;
@@ -23,11 +27,11 @@ public class City {
         this.name = name;
     }
 
-    public ArrayList<Edge> getNeighbours() {
+    public ArrayList<Edge> getWays() {
         return ways;
     }
 
-    public void setNeighbours(ArrayList<Edge> ways) {
+    public void setWays(ArrayList<Edge> ways) {
         this.ways = ways;
     }
 
@@ -38,13 +42,31 @@ public class City {
         for (int i=0;i<ways.size();i++) {
             ways.get(i).printInfoAboutEdge();
         }
+        System.out.println("-------------------------------");
     }
 
-    public boolean isVisited() {
-        return isVisited;
+
+    public String getFrom() {
+        return from;
     }
 
-    public void setVisited(boolean visited) {
-        isVisited = visited;
+    public void setFrom(String from) {
+        this.from = from;
+    }
+
+    public int getSum() {
+        return sum;
+    }
+
+    public void setSum(int sum) {
+        this.sum = sum;
+    }
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
     }
 }
